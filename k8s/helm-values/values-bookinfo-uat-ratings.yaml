@@ -9,7 +9,7 @@ ratings:
 ingress:
   host: bookinfo.uat.opsta.net
   path: "/student18/ratings(/|$)(.*)"
-  serviceType: ClusterIP  
+  serviceType: ClusterIP
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
