@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/jednuth156/bookinfo_ratings:dev
+          tags: ghcr.io/jednuth156/bookinfo-ratings:dev
   deploy:
     needs: build
     runs-on: ubuntu-20.04
